@@ -1,0 +1,35 @@
+.wrapper {
+    display: grid;
+    grid-gap: 1em;
+
+    grid-template-rows: repeat(6, 100px);
+    grid-template-columns: repeat(auto-fit, 150px);
+
+    grid-template-areas:    "header header header header header header"
+                            "main main main main main main"
+                            "footer footer footer footer footer footer";
+}
+
+.item-1 {
+    grid-area:header;
+    background-color: #c8310c;
+    text-align: center;
+}
+.item-2 {
+    grid-area:main;
+    background-color: #439944;
+    text-align: center;
+
+}
+
+
+.item-3 {
+    grid-area:footer;
+    background-color: blue;
+    text-align: center;
+}
+
+
+
+
+
